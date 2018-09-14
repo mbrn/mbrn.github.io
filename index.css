@@ -1,0 +1,61 @@
+body {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:url(bg.png); 
+    background-position: fixed;
+    background-size: cover;
+}
+
+.icons {
+  margin-top: 40;
+}
+
+.icons a {
+  font-size: 40; 
+  color: white;
+  margin-right: 30px;
+}
+
+.lx-home{
+	position: relative !important;
+	height:100% !important;
+	z-index: 1;
+}
+
+.lx-home-warp{
+	position: relative !important;
+	height:100% !important;
+	display: table !important;
+	table-layout: fixed !important;
+}
+
+.lx-min-warp{
+	position: relative;
+	width:960px;
+	margin:auto;
+}
+
+.lx-home-vertical{    
+	display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+.lx-home-name{
+	font-size: 45px;
+	font-weight: 900;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	font-family: 'roboto', serif;
+}
+
+.lx-home-text{
+	font-size: 16px;
+	font-weight: 500;
+	color: #FFFFFF;
+	text-transform: initial;
+  width:60%;
+  font-family: 'roboto', serif;
+}
