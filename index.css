@@ -3,9 +3,9 @@
 }
 
 .icons a {
-  font-size: 40; 
+  font-size: 35; 
   color: white;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .lx-warpper {
@@ -55,7 +55,6 @@
 
 .lx-home-name{
 	font-size: 45px;
-	font-weight: 900;
 	color: #FFFFFF;
 	text-transform: capitalize;
 	font-family: 'roboto', serif;
@@ -63,7 +62,6 @@
 
 .lx-home-text{
 	font-size: 16px;
-	font-weight: 500;
 	color: #FFFFFF;
 	text-transform: initial;
   width:60%;
@@ -72,9 +70,6 @@
 
 
 @media screen and (max-width: 1250px) {
-  .lx-home-name{
-  }
-
   .lx-home-vertical{    
     padding: 10px;
   }
