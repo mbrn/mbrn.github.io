@@ -1,14 +1,3 @@
-body {
-	position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background:url(bg.png); 
-    background-position: fixed;
-    background-size: cover;
-}
-
 .icons {
   margin-top: 40;
 }
@@ -16,7 +5,28 @@ body {
 .icons a {
   font-size: 40; 
   color: white;
-  margin-right: 30px;
+  margin-right: 20px;
+}
+
+.lx-warpper {
+ 
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(bg.png);
+  background-position: fixed;
+  background-size: cover;
+}
+
+.lx-main {
+  padding-left: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .lx-home{
@@ -58,4 +68,14 @@ body {
 	text-transform: initial;
   width:60%;
   font-family: 'roboto', serif;
+}
+
+
+@media screen and (max-width: 1250px) {
+  .lx-home-name{
+  }
+
+  .lx-home-vertical{    
+    padding: 10px;
+  }
 }
