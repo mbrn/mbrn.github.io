@@ -68,6 +68,12 @@
   font-family: 'roboto', serif;
 }
 
+.avatar {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
 
 @media screen and (max-width: 1250px) {
   .lx-home-vertical{    
