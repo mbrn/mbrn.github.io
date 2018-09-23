@@ -1,3 +1,3 @@
 # mbrn.github.io
 
-Personal website accessible from [mehmetbaran.net](http://mehmetbaran.net)
+Personal website accessible from [mehmetbaran.net](https://mbrn.github.io/)
