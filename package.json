@@ -1,0 +1,20 @@
+{
+  "name": "mbrn.github.io",
+  "version": "1.0.0",
+  "description": "Personal website accessible from [mbrn.github.io/](https://mbrn.github.io/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbrn/mbrn.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbrn/mbrn.github.io/issues"
+  },
+  "homepage": "https://github.com/mbrn/mbrn.github.io#readme"
+}
