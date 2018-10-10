@@ -4,6 +4,7 @@ h1, p {
 
 .icons {
   margin-top: 40;
+  display: flex;
 }
 
 .icons a {
