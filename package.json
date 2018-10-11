@@ -61,5 +61,7 @@
     "webpack-dev-server": "^3.1.8",
     "webpack-merge": "^4.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@material-ui/core": "3.2.0"
+  }
 }
