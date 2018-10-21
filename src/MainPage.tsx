@@ -8,7 +8,7 @@ export default class MainPage extends React.Component<MainPageProps, undefined> 
   renderSocialIcon(address: string, icon: string) {
     return (
       <span >
-        <a href={address} style={{color: 'white', margin: 25, fontSize: 40}}>
+        <a href={address} style={{color: 'white', margin: 25, fontSize: 35}}>
           <i class={icon}></i>
         </a>
       </span>

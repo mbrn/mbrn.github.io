@@ -35,7 +35,7 @@ class App extends React.Component<AppProps, any> {
                             <Tab label="Experience" />
                         </Tabs>
                     </div>
-                    <div style={{ display: 'table', position: 'absolute', width: '100%', minHeight: 400}}>
+                    <div style={{ display: 'table', position: 'absolute', width: '100%', maxHeight: '100%'}}>
                         <div style={{ display: 'table-cell', verticalAlign: 'middle' }}>
                             <div style={{ marginLeft: 'auto', marginRight: 'auto', color: 'white', textAlign: 'center' }}>
                                 <div style={{height:50}}></div>
@@ -63,11 +63,11 @@ const styles = {
     root: {
     },
     tabText: {
-        color: 'white',        
+        color: '#fff',        
     },
     tabIndicator: {
-        backgroundColor: 'white',
+        display: 'none',
     }
 };
 
-export default withStyles(styles)(App)
+export default withStyles(styles as any)(App)
