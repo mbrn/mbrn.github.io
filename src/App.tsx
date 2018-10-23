@@ -3,6 +3,7 @@ import { Tabs, Tab } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import SwipeableViews from 'react-swipeable-views';
 import MainPage from "./MainPage";
+import KeySkills from "./KeySkills";
 const resumeData = require('../resume-data.json');
 
 export interface AppProps {
@@ -12,7 +13,7 @@ class App extends React.Component<AppProps, any> {
     constructor(props) {
         super(props);
         this.state = {
-            value: 0
+            value: 1
         }
     }
 
@@ -31,13 +32,14 @@ class App extends React.Component<AppProps, any> {
                         >
                             <Tab label="About" />
                             <Tab label="Key Skills" />
-                            <Tab label="Education" />
+                            <Tab label="Portfolio" />
                             <Tab label="Experience" />
+                            <Tab label="Education" />                                                        
                         </Tabs>
                     </div>
                     <div style={{ display: 'table', position: 'absolute', width: '100%', maxHeight: '100%'}}>
                         <div style={{ display: 'table-cell', verticalAlign: 'middle' }}>
-                            <div style={{ marginLeft: 'auto', marginRight: 'auto', color: 'white', textAlign: 'center' }}>
+                            <div style={{ marginLeft: 'auto', marginRight: 'auto', color: '#eee', textAlign: 'center' }}>
                                 <div style={{height:50}}></div>
                                 <SwipeableViews
                                     axis="x"
@@ -45,9 +47,10 @@ class App extends React.Component<AppProps, any> {
                                     onChangeIndex={index => { this.setState({ value: index }); }}
                                 >
                                     <MainPage resumeData={resumeData} />
-                                    <div>Item Two</div>
+                                    <KeySkills resumeData={resumeData} />
                                     <div>Item Three</div>
                                     <div>Item Three</div>
+                                    <div>Item Four</div>
                                 </SwipeableViews>
                                 {/*  */}
                             </div>
