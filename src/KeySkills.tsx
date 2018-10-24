@@ -4,7 +4,8 @@ import { LinearProgress, Grid, withStyles } from '@material-ui/core';
 const styles = {
   root: {
     height: 20,
-    borderRadius: 5
+    borderRadius: 5,
+    marginTop: 2
   },
   colorPrimary: {
     backgroundColor: '#FFFFFF11',
@@ -38,8 +39,7 @@ export default class KeySkills extends React.Component<KeySkillsProps, undefined
   render() {    
     return (
       <div style={{flexGrow: 1, maxWidth: 600, margin: 'auto', padding: 10}}>
-        <Skill value={80} text="C#"/>
-        <Skill value={50} text="React"/>
+        {this.props.resumeData.keySkills.map(skill => <Skill value={skill.level} text={skill.name}/>)}
       </div>
     );
   }

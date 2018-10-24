@@ -11,6 +11,10 @@
   ],
   "shortDescription": "From 2008, I started my career professionally in the software industry. I developed so much project, especially in payment systems. Furthermore, I am interested in software architecture, design principles and object oriented programming. For me, it has always been more important to make software teams easier to work and to get right system architectures and best available performance and simplicity. I always want to work in jobs that i can make the company’s software development processes more efficient and more powerful.",
   "keySkills": [
-    
+    {"name": "C#", "level": 90},
+    {"name": "ASP.NET MVC", "level": 90},
+    {"name": "Javascript", "level": 90},
+    {"name": "Typescript", "level": 70},
+    {"name": "React", "level": 90}
   ]
 }
