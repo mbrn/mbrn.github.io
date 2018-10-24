@@ -9,7 +9,7 @@ export default class MainPage extends React.Component<MainPageProps, undefined> 
     return (
       <span >
         <a href={address} style={{color: '#eee', margin: 25, fontSize: 35}}>
-          <i class={icon}></i>
+          {React.createElement("i", { class: icon })}
         </a>
       </span>
     )

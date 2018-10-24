@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "yarn run clean-dist && webpack -p --config=configs/webpack/prod.js",
-    "clean-dist": "rm -f -r -d dist",
+    "clean-dist": "rm -f -r -d docs",
     "lint": "yarn run lint:ts && yarn run lint:sass",
     "lint:ts": "tslint './src/**/*.ts*' --format stylish --force",
     "lint:sass": "stylelint ./src/**/*.scss",

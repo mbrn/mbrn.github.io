@@ -13,7 +13,7 @@ class App extends React.Component<AppProps, any> {
     constructor(props) {
         super(props);
         this.state = {
-            value: 1
+            value: 0
         }
     }
 
