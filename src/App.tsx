@@ -21,7 +21,7 @@ class App extends React.Component<AppProps, any> {
         const { classes } = this.props;
 
         return (
-            <div id="app" style={{ backgroundImage: 'url(./public/assets/bg.jpg)' }}>
+            <div id="app" style={{ backgroundImage: 'url(./public/assets/bg.jpg)', height: '100%', width: '100%',  }}>
                 <div style={{height: '100%', width: '100%', backgroundColor: '#00000066'}}>
                     <div style={{paddingTop: 20}}>
                         <Tabs
