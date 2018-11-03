@@ -14,16 +14,16 @@ const styles = {
     backgroundColor: '#388E3C',
   }
 };
-const Skill = withStyles(styles)((props: {value: number, text: string, classes?: any}) => {
+const Skill = withStyles(styles)((props: { value: number, text: string, classes?: any }) => {
   const { classes } = props;
   return (
-    <div style={{marginBottom: 40}}>
+    <div style={{ marginBottom: 40 }}>
       <Grid container>
-        <Grid item xs={6} style={{textAlign: 'left'}}>{props.text}</Grid>
-        <Grid item xs={6} style={{textAlign: 'right'}}>{props.value + "%"}</Grid>
-      </Grid>      
-      <LinearProgress 
-        variant="determinate" 
+        <Grid item xs={6} style={{ textAlign: 'left' }}>{props.text}</Grid>
+        <Grid item xs={6} style={{ textAlign: 'right' }}>{props.value + "%"}</Grid>
+      </Grid>
+      <LinearProgress
+        variant="determinate"
         value={props.value}
         classes={...classes}
       />
@@ -33,13 +33,13 @@ const Skill = withStyles(styles)((props: {value: number, text: string, classes?:
 
 
 export interface KeySkillsProps {
-  resumeData: any;  
+  resumeData: any;
 }
 export default class KeySkills extends React.Component<KeySkillsProps, undefined> {
-  render() {    
+  render() {
     return (
-      <div style={{flexGrow: 1, maxWidth: 600, margin: 'auto', padding: 10}}>
-        {this.props.resumeData.keySkills.map(skill => <Skill value={skill.level} text={skill.name}/>)}
+      <div style={{ flexGrow: 1, maxWidth: 600, margin: 'auto', padding: 10 }}>
+        {this.props.resumeData.keySkills.map(skill => <Skill value={skill.level} text={skill.name} />)}
       </div>
     );
   }

@@ -21,9 +21,9 @@ class App extends React.Component<AppProps, any> {
         const { classes } = this.props;
 
         return (
-            <div id="app" style={{ backgroundImage: 'url(./public/assets/bg.jpg)', height: '100vh', width: '100%',  }}>
-                <div style={{height: '100%', width: '100%', backgroundColor: '#00000066'}}>
-                    <div style={{paddingTop: 20}}>
+            <div id="app" style={{ backgroundImage: 'url(./public/assets/bg.jpg)', height: '100vh', width: '100%', }}>
+                <div style={{ height: '100%', width: '100%', backgroundColor: '#00000066' }}>
+                    <div style={{ paddingTop: 20 }}>
                         <Tabs
                             value={this.state.value}
                             onChange={(event, value) => { this.setState({ value }); }}
@@ -34,13 +34,13 @@ class App extends React.Component<AppProps, any> {
                             <Tab label="Key Skills" />
                             <Tab label="Portfolio" />
                             <Tab label="Experience" />
-                            <Tab label="Education" />                                                        
+                            <Tab label="Education" />
                         </Tabs>
                     </div>
-                    <div style={{ display: 'table', position: 'absolute', width: '100%', maxHeight: '100%'}}>
+                    <div style={{ display: 'table', position: 'absolute', width: '100%', maxHeight: '100%' }}>
                         <div style={{ display: 'table-cell', verticalAlign: 'middle' }}>
                             <div style={{ marginLeft: 'auto', marginRight: 'auto', color: '#eee', textAlign: 'center' }}>
-                                <div style={{height:50}}></div>
+                                <div style={{ height: 50 }}></div>
                                 <SwipeableViews
                                     axis="x"
                                     index={this.state.value}
@@ -66,7 +66,7 @@ const styles = {
     root: {
     },
     tabText: {
-        color: '#fff',        
+        color: '#fff',
     },
     tabIndicator: {
         display: 'none',
