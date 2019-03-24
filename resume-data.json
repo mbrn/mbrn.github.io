@@ -1,12 +1,12 @@
 {
   "name": "Mehmet Baran",
-  "personBio": "Developer, Software Architect, Blockchain Fan",
+  "personBio": "Full Stack Developer, Software Architect",
   "socialLinks": [
-    { "address": "https://twitter.com/baranmehmet", "icon": "fab fa-twitter" },
+    { "address": "https://github.com/mbrn", "icon": "fab fa-github" },
     { "address": "https://www.linkedin.com/in/mehmet-baran-83039353/", "icon": "fab fa-linkedin" },
     { "address": "https://medium.com/@mehmet.baran", "icon": "fab fa-medium" }, 
-    { "address": "https://github.com/mbrn", "icon": "fab fa-github" },
     { "address": "https://stackoverflow.com/users/7480727/mehmet-baran", "icon": "fab fa-stack-overflow" },
+    { "address": "https://twitter.com/baranmehmet", "icon": "fab fa-twitter" },
     { "address": "mailto:mehmetbaran@mehmetbaran.net", "icon": "fas fa-envelope" }    
   ],
   "shortDescription": "From 2008, I started my career professionally in the software industry. I developed so much project, especially in payment systems. Furthermore, I am interested in software architecture, design principles and object oriented programming. For me, it has always been more important to make software teams easier to work and to get right system architectures and best available performance and simplicity. I always want to work in jobs that i can make the company’s software development processes more efficient and more powerful.",

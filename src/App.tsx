@@ -1,76 +1,48 @@
 import * as React from "react";
-import { Tabs, Tab } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
-import SwipeableViews from 'react-swipeable-views';
-import MainPage from "./MainPage";
-import KeySkills from "./KeySkills";
+import { withStyles } from '@material-ui/core';
+import { MainSection } from "./sections/main-section";
+import { SocialLinksSection } from "./sections/social-links-section";
+import { KeySkillsSection } from "./sections/key-skills-section";
 const resumeData = require('../resume-data.json');
 
 export interface AppProps {
-    classes: any;
+  classes: any;
 }
 class App extends React.Component<AppProps, any> {
-    constructor(props) {
-        super(props);
-        this.state = {
-            value: 0
-        }
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 0
     }
+  }  
 
-    render() {
-        const { classes } = this.props;
+  render() {
+    const { classes } = this.props;
 
-        return (
-            <div id="app" style={{ backgroundImage: 'url(./public/assets/bg.jpg)', height: '100vh', width: '100%', }}>
-                <div style={{ height: '100%', width: '100%', backgroundColor: '#00000066' }}>
-                    <div style={{ paddingTop: 20 }}>
-                        <Tabs
-                            value={this.state.value}
-                            onChange={(event, value) => { this.setState({ value }); }}
-                            centered
-                            classes={{ root: classes.tabText, indicator: classes.tabIndicator }}
-                        >
-                            <Tab label="About" />
-                            <Tab label="Key Skills" />
-                            <Tab label="Portfolio" />
-                            <Tab label="Experience" />
-                            <Tab label="Education" />
-                        </Tabs>
-                    </div>
-                    <div style={{ display: 'table', position: 'absolute', width: '100%', maxHeight: '100%' }}>
-                        <div style={{ display: 'table-cell', verticalAlign: 'middle' }}>
-                            <div style={{ marginLeft: 'auto', marginRight: 'auto', color: '#eee', textAlign: 'center' }}>
-                                <div style={{ height: 50 }}></div>
-                                <SwipeableViews
-                                    axis="x"
-                                    index={this.state.value}
-                                    onChangeIndex={index => { this.setState({ value: index }); }}
-                                >
-                                    <MainPage resumeData={resumeData} />
-                                    <KeySkills resumeData={resumeData} />
-                                    <div>Item Three</div>
-                                    <div>Item Three</div>
-                                    <div>Item Four</div>
-                                </SwipeableViews>
-                                {/*  */}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+    return (
+      <div style={{ maxWidth: 1000, margin: 'auto', padding: 5, overflowY: 'auto' }}>
+        <Spacer/>
+        <MainSection resumeData={resumeData}/>
+        <Spacer/>
+        <SocialLinksSection resumeData={resumeData}/>
+        <Spacer/>
+        <KeySkillsSection resumeData={resumeData}/>
+      </div>
+    );
+  }
 }
 
+const Spacer = () => <div style={{height: 20}}/> 
+
 const styles = {
-    root: {
-    },
-    tabText: {
-        color: '#fff',
-    },
-    tabIndicator: {
-        display: 'none',
-    }
+  root: {
+  },
+  tabText: {
+    color: '#fff',
+  },
+  tabIndicator: {
+    display: 'none',
+  }
 };
 
 export default withStyles(styles as any)(App)
