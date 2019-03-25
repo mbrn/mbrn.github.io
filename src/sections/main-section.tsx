@@ -13,11 +13,11 @@ export class MainSectionInner extends React.Component<MainSectionProps, any> {
       <Card elevation={0}>
         <CardContent>
           <div className={classes.root}>
-            <div>
+            <div style={{textAlign: 'center'}}>
               <img src="./public/assets/profile_photo.png" style={{ maxWidth: 150, maxHeight: 150, borderRadius: 5 }} />
             </div>
             <div>
-              <Typography variant="h4" style={{color: '#5B6973', fontWeight: 600}}>{this.props.resumeData.name}</Typography>
+              <Typography variant="h4" style={{color: '#5B6973', fontWeight: 500}}>{this.props.resumeData.name}</Typography>
               <Typography variant="caption" color="textSecondary">{this.props.resumeData.personBio}</Typography>
 
               <Typography variant="body1" style={{ paddingTop: 20, textAlign: 'justify' }} color="textSecondary">{this.props.resumeData.shortDescription}</Typography>

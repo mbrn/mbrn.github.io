@@ -12,15 +12,15 @@ class ExperienceSectionInner extends React.Component<ExperienceSectionProps, any
 
       <div>
         <div className={this.props.classes.experience}>
-          <div>
+          <div style={{textAlign: 'center'}}>
             <img src={"./public/assets/company/" + experience.logo} style={{ maxWidth: 100, maxHeight: 100, borderRadius: 5, filter: 'grayscale(50%)', opacity: 0.6 }} />
           </div>
           <div>
             <div style={{ display: 'flex' }}>
               <Typography variant="h6" style={{ flex: 1, color: '#5B6973' }}>{experience.title}</Typography>
               <div>
-                <Typography variant="body2" style={{ color: '#5B6973' }}>{experience.company}, {experience.location}</Typography>
-                <Typography variant="body2" style={{ float: 'right', color: '#5B6973' }}>{experience.start}-{experience.end}</Typography>
+                <Typography variant="caption" style={{ color: '#5B6973AA' }}>{experience.company}, {experience.location}</Typography>
+                <Typography variant="caption" style={{ float: 'right', color: '#5B6973AA' }}>{experience.start}-{experience.end}</Typography>
               </div>
             </div>
             <List>
