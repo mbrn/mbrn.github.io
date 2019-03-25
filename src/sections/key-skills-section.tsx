@@ -48,6 +48,7 @@ class KeySkillsSectionInner extends React.Component<KeySkillsSectionProps, any> 
                   style={{
                     display: 'inline-block',
                     backgroundColor: '#b0bec5',
+                    fontSize: 11,
                     color: 'white',
                     margin: '0 5px 2px 0',
                     padding: '3px 5px',
