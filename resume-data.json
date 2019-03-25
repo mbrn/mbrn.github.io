@@ -2,23 +2,175 @@
   "name": "Mehmet Baran",
   "personBio": "Full Stack Developer, Software Architect",
   "socialLinks": [
-    { "address": "https://github.com/mbrn", "icon": "fab fa-github" },
-    { "address": "https://www.linkedin.com/in/mehmet-baran-83039353/", "icon": "fab fa-linkedin" },
-    { "address": "https://medium.com/@mehmet.baran", "icon": "fab fa-medium" }, 
-    { "address": "https://stackoverflow.com/users/7480727/mehmet-baran", "icon": "fab fa-stack-overflow" },
-    { "address": "https://twitter.com/baranmehmet", "icon": "fab fa-twitter" },
-    { "address": "mailto:mehmetbaran@mehmetbaran.net", "icon": "fas fa-envelope" }    
+    {
+      "address": "https://github.com/mbrn",
+      "icon": "fab fa-github"
+    },
+    {
+      "address": "https://www.linkedin.com/in/mehmet-baran-83039353/",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "address": "https://medium.com/@mehmet.baran",
+      "icon": "fab fa-medium"
+    },
+    {
+      "address": "https://stackoverflow.com/users/7480727/mehmet-baran",
+      "icon": "fab fa-stack-overflow"
+    },
+    {
+      "address": "https://twitter.com/baranmehmet",
+      "icon": "fab fa-twitter"
+    },
+    {
+      "address": "mailto:mehmetbaran@mehmetbaran.net",
+      "icon": "fas fa-envelope"
+    }
   ],
-  "shortDescription": "From 2008, I started my career professionally in the software industry. I developed so much project, especially in payment systems. Furthermore, I am interested in software architecture, design principles and object oriented programming. For me, it has always been more important to make software teams easier to work and to get right system architectures and best available performance and simplicity. I always want to work in jobs that i can make the company’s software development processes more efficient and more powerful.",
-  "keySkills": [
-    {"name": "C#", "level": 90, "logo": "c_sharp.png" },
-    {"name": "ASP.NET MVC", "level": 90, "logo": "asp-net-mvc.jpg" },
-    {"name": "Node.js", "level": 70, "logo": "nodejs.png" },
-    {"name": "Javascript", "level": 90, "logo": "js.png" },
-    {"name": "Typescript", "level": 70, "logo": "typescript.jpeg" },
-    {"name": "React", "level": 90, "logo": "react.png" },
-    {"name": "Oracle", "level": 90, "logo": "oracle.png" },
-    {"name": "MySQL", "level": 60, "logo": "mysql.png" },
-    {"name": "MongoDB", "level": 50, "logo": "mongodb.png" }
+  "shortDescription": "I started my career professionally in the software industry. I developed a lot of projects, especially in payment systems. Furthermore, I am interested in software architecture, design principles and object oriented programming. For me, it has always been more important to make software teams easier to work and to get right system architectures and best available performance and simplicity. I always want to work in jobs that i can make the company’s software development processes more efficient and more powerful.",
+  "keySkills": {
+    "mainSkills": [
+      {
+        "name": "C#",
+        "level": 90,
+        "logo": "c_sharp.png"
+      },
+      {
+        "name": "ASP.NET MVC",
+        "level": 90,
+        "logo": "asp-net-mvc.jpg"
+      },
+      {
+        "name": "Node.js",
+        "level": 70,
+        "logo": "nodejs.png"
+      },
+      {
+        "name": "Javascript",
+        "level": 90,
+        "logo": "js.png"
+      },
+      {
+        "name": "Typescript",
+        "level": 70,
+        "logo": "typescript.jpeg"
+      },
+      {
+        "name": "React",
+        "level": 90,
+        "logo": "react.png"
+      },
+      {
+        "name": "Oracle",
+        "level": 90,
+        "logo": "oracle.png"
+      },
+      {
+        "name": "MySQL",
+        "level": 60,
+        "logo": "mysql.png"
+      },
+      {
+        "name": "SQL Server",
+        "level": 80,
+        "logo": "mssql.jpg"
+      },
+      {
+        "name": "MongoDB",
+        "level": 50,
+        "logo": "mongodb.png"
+      }
+    ],
+    "others": [
+      "Microservices",
+      "ORM",
+      "Redis",
+      "Distributed Messaging Systems",
+      "RabbitMQ",
+      "Thread&Socket Programming",
+      "Frontend Architectures",
+      "Opensource",
+      "Continuous Integration",
+      "Continuous Delivery",
+      "Agile/Scrum"
+    ]
+  },
+  "experience": [
+    {
+      "start": "04.2018",
+      "end": "Present",
+      "title": "Framework Solutions Coordinator",
+      "company": "Digiturk",
+      "location": "Istanbul",
+      "logo": "digiturk.png",
+      "jobs": [
+        "Design and Development of React based frontend infrastructure. Technology stack contains React, Redux, Typescript, Material Design."
+      ]
+    },
+    {
+      "start": "07.2017",
+      "end": "04.2018",
+      "title": "Enterprise Architect",
+      "company": "Kuveyt Türk Participation Bank",
+      "location": "Kocaeli",
+      "logo": "kuveytturk.png",
+      "jobs": [
+        "Development and maintanence of ASP.NET MVC and React based software development infrastructure.",
+        "Design and Development of dynamic report screen infrastructure based on React."
+      ]
+    },
+    {
+      "start": "11.2014",
+      "end": "06.2017",
+      "title": "Software Architect",
+      "company": "DeviaTech (Co-Founder)",
+      "location": "Istanbul",
+      "logo": "devia.png",
+      "jobs": [
+        "Design and Development of ASP.NET MVC and jQuery based software development infrastructure that contains modules such as data access, authorization, logging, monitoring, documentation, e-commerce, and UI.",
+        "Consulting of payment system and software development for TMSF.",
+        "Consulting of payment system and software development for AlBaraka Turk Participation Bank",
+        "Development of map based iOS app which services geographical information for Ankara Metropolitan Municipality."
+      ]
+    },
+    {
+      "start": "06.2011",
+      "end": "11.2014",
+      "title": "Software Team Leader",
+      "company": "Asya Participation Bank",
+      "location": "Istanbul",
+      "logo": "asya.jpg",
+      "jobs": [
+        "Design and Development of statement module of payment system.",
+        "Desing and Development of ATM Backoffice module of payment system.",
+        "Design and Development of new framework for payment system.",
+        "Design and Development of a deployment tool which automates all of software development lifecycle, implements COBIT and banking industry rules."
+      ]
+    },
+    {
+      "start": "09.2008",
+      "end": "12.2010",
+      "title": "Software Developer",
+      "company": "PayCore",
+      "location": "Istanbul",
+      "logo": "paycore.png",
+      "jobs": [
+        "Development of ATM support tools for TEB Turkey. Project was based on .Net platform.",
+        "Development of merchant, card, customer and card authorization modules of payment system for Aktif Bank as a member of development team. Project was based on .Net platform.",
+        "Conversion of DenizBank payment system to new Ocean platform as a member of development team that composed from 30+ developers."
+      ]
+    },
+    {
+      "start": "02.2008",
+      "end": "09.2008",
+      "title": "Junior Software Developer",
+      "company": "Spexco Software",
+      "location": "Istanbul",
+      "logo": "spexco.png",
+      "jobs": [
+        "Development of a mobile chat app which based on J2ME platform and MSNP protocol.",
+        "Development of a chat server which based on J2SE platform and MSNP protocol."
+      ]
+    }
   ]
 }
