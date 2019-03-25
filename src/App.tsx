@@ -20,7 +20,7 @@ class App extends React.Component<AppProps, any> {
     const { classes } = this.props;
 
     return (
-      <div style={{ maxWidth: 1000, margin: 'auto', padding: 5, overflowY: 'auto' }}>
+      <div style={{ maxWidth: 800, margin: 'auto', padding: 5, overflowY: 'auto' }}>
         <MainSection resumeData={resumeData}/>
         <Spacer/>
         <SocialLinksSection resumeData={resumeData}/>
