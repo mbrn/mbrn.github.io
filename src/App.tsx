@@ -21,7 +21,6 @@ class App extends React.Component<AppProps, any> {
 
     return (
       <div style={{ maxWidth: 1000, margin: 'auto', padding: 5, overflowY: 'auto' }}>
-        <Spacer height={5}/>
         <MainSection resumeData={resumeData}/>
         <Spacer/>
         <SocialLinksSection resumeData={resumeData}/>
@@ -32,7 +31,7 @@ class App extends React.Component<AppProps, any> {
   }
 }
 
-const Spacer = ({height} : {height?: number}) => <div style={{height: height || 20}}/> 
+const Spacer = ({height} : {height?: number}) => <div style={{height: height || 5}}/> 
 
 const styles = {
   root: {

@@ -13,7 +13,7 @@ export class SocialLinksSection extends React.Component<SocialLinksSectionProps,
           <div style={{ display: 'flex' }}>
             {this.props.resumeData.socialLinks.map(link => (
               <span style={{ flex: 1, textAlign: 'center' }}>
-                <a href={link.address} style={{ color: '#78909c', margin: 25, fontSize: 25 }}>
+                <a href={link.address} style={{ color: '#78909c', fontSize: 25 }}>
                   {React.createElement("i", { class: link.icon })}
                 </a>
               </span>
