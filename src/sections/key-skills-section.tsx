@@ -12,9 +12,16 @@ class KeySkillsSectionInner extends React.Component<KeySkillsSectionProps, any> 
       <Card elevation={0}>
         <CardHeader title="Key Skills" titleTypographyProps={{ variant: 'h6' }} />
         <CardContent>
-          <Grid container spacing={40}>
+          <Grid container spacing={32}>
             {this.props.resumeData.keySkills.map(skill => (
-              <Grid item xs={12} sm={12} md={6} lg={4}>
+              <Grid item xs={4} sm={3} md={2} lg={2}>
+                <img src={"./public/assets/" + skill.logo} style={{padding: '0 20%', maxWidth: '60%', filter: 'grayscale(100%)', opacity: 0.5}}/>
+
+                <LinearProgress
+                  variant="determinate"
+                  value={skill.level}
+                  classes={...this.props.classes}
+                />
                 <div style={{ display: 'flex' }}>
                   <div style={{ flex: 1 }}>
                     <Typography variant="caption" color="textSecondary">{skill.name}</Typography>
@@ -24,12 +31,6 @@ class KeySkillsSectionInner extends React.Component<KeySkillsSectionProps, any> 
                     <Typography variant="caption" color="textSecondary">{skill.level + '%'}</Typography>
                   </div>
                 </div>
-
-                <LinearProgress
-                  variant="determinate"
-                  value={skill.level}
-                  classes={...this.props.classes}
-                />
               </Grid>
             ))}
           </Grid>
