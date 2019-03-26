@@ -12,8 +12,8 @@ class ExperienceSectionInner extends React.Component<ExperienceSectionProps, any
 
       <div>
         <div className={this.props.classes.experience}>
-          <div style={{textAlign: 'center'}}>
-            <img src={"./public/assets/company/" + experience.logo} style={{ maxWidth: 100, maxHeight: 100, borderRadius: 5, filter: 'grayscale(50%)', opacity: 0.6 }} />
+          <div style={{ textAlign: 'center' }}>
+            <img src={"./public/assets/company/" + experience.logo} className={this.props.classes.image} />
           </div>
           <div>
             <div style={{ display: 'flex' }}>
@@ -60,9 +60,20 @@ const styles = {
   experience: {
     display: 'grid',
     gridGap: '10px',
-    gridTemplateColumns: '100px auto',
+    gridTemplateColumns: '120px auto',
     '@media only screen and (max-width: 400px)': {
       display: 'block'
+    }
+  },
+  image: {
+    maxWidth: 100, 
+    maxHeight: 100, 
+    borderRadius: 5, 
+    filter: 'grayscale(50%)', 
+    opacity: 0.6,
+    '@media only screen and (max-width: 400px)': {
+      maxWidth:'80%',      
+      maxHeight:'80%',
     }
   }
 };

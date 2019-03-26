@@ -4,6 +4,7 @@ import { MainSection } from "./sections/main-section";
 import { SocialLinksSection } from "./sections/social-links-section";
 import { KeySkillsSection } from "./sections/key-skills-section";
 import { ExperienceSection } from "./sections/experience-section";
+import { PortfolioSection } from "./sections/portfolio-section";
 const resumeData = require('../resume-data.json');
 
 export interface AppProps {
@@ -27,6 +28,8 @@ class App extends React.Component<AppProps, any> {
         <SocialLinksSection resumeData={resumeData}/>
         <Spacer/>
         <KeySkillsSection resumeData={resumeData}/>
+        <Spacer/>
+        <PortfolioSection resumeData={resumeData}/>
         <Spacer/>
         <ExperienceSection resumeData={resumeData}/>
       </div>

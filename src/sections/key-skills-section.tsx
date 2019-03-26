@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Card, CardHeader, CardContent, Typography, Icon, Grid, LinearProgress, withStyles } from '@material-ui/core';
+import Tag from '../components/tag';
 
 export interface KeySkillsSectionProps {
   resumeData: any;
@@ -42,22 +43,7 @@ class KeySkillsSectionInner extends React.Component<KeySkillsSectionProps, any> 
           <div style={{ marginTop: 30 }}>
             <Typography variant="body1" style={{ display: 'inline' }} color="textSecondary">Other tech interests:</Typography>
             <div>
-              {this.props.resumeData.keySkills.others.map(skill => (
-                <Typography
-                  variant="caption"
-                  style={{
-                    display: 'inline-block',
-                    backgroundColor: '#b0bec5',
-                    fontSize: 11,
-                    color: 'white',
-                    margin: '0 5px 2px 0',
-                    padding: '3px 5px',
-                    borderRadius: 4,
-                  }}
-                >
-                  {skill}
-                </Typography>
-              ))}
+              {this.props.resumeData.keySkills.others.map(skill => <Tag text={skill}/>)}
             </div>
           </div>
 
