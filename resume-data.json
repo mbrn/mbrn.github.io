@@ -92,7 +92,8 @@
       "Opensource",
       "Continuous Integration",
       "Continuous Delivery",
-      "Agile/Scrum"
+      "Agile/Scrum", 
+      "Graphql"
     ]
   },
   "experience": [
@@ -190,32 +191,7 @@
         "babel",
         "webpack"
       ],
-      "images": [
-        {
-          "name": "Login Page",
-          "image": "wface/login.png"
-        },
-        {
-          "name": "A DataTable Page",
-          "image": "wface/datatable.png"
-        },
-        {
-          "name": "Dialog",
-          "image": "wface/dialog.png"
-        },
-        {
-          "name": "A Button Component",
-          "image": "wface/button.png"
-        },
-        {
-          "name": "A Redux Reducer",
-          "image": "wface/redux.png"
-        },
-        {
-          "name": "Project File Structure",
-          "image": "wface/structure.png"
-        }
-      ]
+      "image": "wface.png"
     }
   ]
 }

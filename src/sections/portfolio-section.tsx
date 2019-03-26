@@ -14,7 +14,7 @@ class PortfolioSectionInner extends React.Component<PortfolioSectionProps, any> 
       <div>
         <div className={this.props.classes.portfolio}>
           <div style={{ textAlign: 'center' }}>
-            <img src={"./public/assets/portfolio/" + portfolio.images[0].image} className={this.props.classes.image} />
+            <img src={"./public/assets/portfolio/" + portfolio.image} className={this.props.classes.image} />
           </div>
           <div>
             <div style={{ display: 'flex' }}>
@@ -95,11 +95,6 @@ const styles = {
     borderRadius: 5,
     transition: 'all ease 400ms',
     filter: 'grayscale(50%)',
-    cursor: 'pointer',
-    opacity: 0.6,
-    '&:hover': {
-      opacity: 1,
-    },
     '@media only screen and (max-width: 400px)': {
       maxWidth: '100%',
       maxHeight: '100%',

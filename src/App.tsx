@@ -37,7 +37,7 @@ class App extends React.Component<AppProps, any> {
   }
 }
 
-const Spacer = ({height} : {height?: number}) => <div style={{height: height || 5}}/> 
+const Spacer = ({height} : {height?: number}) => <div style={{height: height || 10}}/> 
 
 const styles = {
   root: {

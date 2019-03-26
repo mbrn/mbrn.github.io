@@ -70,7 +70,7 @@ const styles = {
     maxHeight: 100, 
     borderRadius: 5, 
     filter: 'grayscale(50%)', 
-    opacity: 0.6,
+    opacity: 0.8,
     '@media only screen and (max-width: 400px)': {
       maxWidth:'80%',      
       maxHeight:'80%',
