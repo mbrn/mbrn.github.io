@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Tooltip, Card, CardHeader, CardContent, withStyles, Typography, Divider, IconButton } from '@material-ui/core';
+import { Tooltip, Card, CardHeader, CardContent, withStyles, Typography, Divider, IconButton, Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@material-ui/core';
 import Tag from '../components/tag';
 
 export interface PortfolioSectionProps {
@@ -8,13 +8,23 @@ export interface PortfolioSectionProps {
 }
 
 class PortfolioSectionInner extends React.Component<PortfolioSectionProps, any> {
-  portfolio = (portfolio, index) => {
-    return (
+  state = {
+    isDialogOpen: false,
+    dialogTitle: '',
+    dialogImage: ''
+  }
 
+  portfolio = (portfolio, index) => {
+    const imgUrl = "./public/assets/portfolio/" + portfolio.image;
+    return (
       <div>
         <div className={this.props.classes.portfolio}>
           <div style={{ textAlign: 'center' }}>
-            <img src={"./public/assets/portfolio/" + portfolio.image} className={this.props.classes.image} />
+            <img src={imgUrl} className={this.props.classes.image} onClick={() => this.setState({
+              isDialogOpen: true,
+              dialogTitle: portfolio.title,
+              dialogImage: imgUrl
+            })} />
           </div>
           <div>
             <div style={{ display: 'flex' }}>
@@ -67,14 +77,34 @@ class PortfolioSectionInner extends React.Component<PortfolioSectionProps, any> 
     )
   }
 
+  dialog = () => (
+    <Dialog
+      open={this.state.isDialogOpen}
+      onClose={() => this.setState({ isDialogOpen: false })}
+      maxWidth="lg"
+      fullWidth
+    >
+      <DialogTitle>{this.state.dialogTitle}</DialogTitle>
+      <DialogContent>
+        <img src={this.state.dialogImage} style={{ width: '100%', height: '100%' }} />
+      </DialogContent>
+      <DialogActions>
+        <Button onClick={() => this.setState({ isDialogOpen: false })}>Close</Button>
+      </DialogActions>
+    </Dialog>
+  )
+
   public render() {
     return (
-      <Card elevation={0}>
-        <CardHeader title="Portfolio" titleTypographyProps={{ variant: 'h5', style: { color: '#5B6973' } }} />
-        <CardContent>
-          {this.props.resumeData.portfolio.map(this.portfolio)}
-        </CardContent>
-      </Card>
+      <>
+        <Card elevation={0}>
+          <CardHeader title="Portfolio" titleTypographyProps={{ variant: 'h5', style: { color: '#5B6973' } }} />
+          <CardContent>
+            {this.props.resumeData.portfolio.map(this.portfolio)}
+          </CardContent>
+        </Card>
+        {this.dialog()}
+      </>
     );
   }
 }
@@ -94,10 +124,15 @@ const styles = {
     maxHeight: 150,
     borderRadius: 5,
     transition: 'all ease 400ms',
+    cursor: 'pointer',
+    opacity: 0.6,
     filter: 'grayscale(50%)',
     '@media only screen and (max-width: 400px)': {
       maxWidth: '100%',
       maxHeight: '100%',
+    },
+    '&:hover': {
+      opacity: 1,
     }
   }
 };
