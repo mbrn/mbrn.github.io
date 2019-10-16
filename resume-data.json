@@ -76,15 +76,34 @@
         "logo": "mssql.jpg"
       },
       {
+        "name": "Redis",
+        "level": 70,
+        "logo": "redis.png"
+      },
+      {
         "name": "MongoDB",
         "level": 50,
         "logo": "mongodb.png"
+      },
+      {
+        "name": "Neo4j",
+        "level": 50,
+        "logo": "neo4j.png"
+      },
+      {
+        "name": "Elastic Search",
+        "level": 50,
+        "logo": "elastic.png"
+      },
+      {
+        "name": "Docker",
+        "level": 70,
+        "logo": "docker.png"
       }
     ],
     "others": [
       "Microservices",
       "ORM",
-      "Redis",
       "Distributed Messaging Systems",
       "RabbitMQ",
       "Thread&Socket Programming",
@@ -176,6 +195,20 @@
   ],
   "portfolio": [
     {
+      "title": "Ecominate",
+      "description": "Ecominate is an all-in-one suite of software tools to help you make data-driven business decisions, see your true profit margins, avoid costly stockouts, streamline your PPC campaigns, and much more.",
+      "url": "https://ecominate.com",
+      "image": "ecominate.png",
+      "skills": [
+        "React.js",
+        "Redux",
+        "material-ui",
+        "git",
+        "babel",
+        "webpack"
+      ]
+    },
+    {
       "title": "WFace",
       "description": "WFace is a frontend framework which contains React + Redux + Typescript + material-ui.com components. It is a boilerplate for developing admin panel quickly. It has customizable authorization, localization, theme modules.",
       "url": "http://wface.demo.digiturk.io",
@@ -195,8 +228,8 @@
     {
       "title": "material-table",
       "description": "material-table is a data table component based on table component with additional features like search, filtering, sorting and much more..",      
-      "github": "/mbrn/material-table",
-      "docUrl": "https://mbrn.github.io/material-table",
+      "github": "https://github.com/mbrn/material-table",
+      "docUrl": "https://material-table.com",
       "image": "material-table.png",
       "skills": [
         "open source",
