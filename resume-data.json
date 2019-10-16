@@ -42,7 +42,7 @@
       },
       {
         "name": "Node.js",
-        "level": 70,
+        "level": 80,
         "logo": "nodejs.png"
       },
       {
@@ -52,7 +52,7 @@
       },
       {
         "name": "Typescript",
-        "level": 70,
+        "level": 80,
         "logo": "typescript.jpeg"
       },
       {
@@ -67,7 +67,7 @@
       },
       {
         "name": "MySQL",
-        "level": 60,
+        "level": 80,
         "logo": "mysql.png"
       },
       {
