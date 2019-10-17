@@ -15,7 +15,7 @@ class KeySkillsSectionInner extends React.Component<KeySkillsSectionProps, any> 
         <CardContent>
           <Grid container spacing={40}>
             {this.props.resumeData.keySkills.mainSkills.map(skill => (
-              <Grid item xs={4} sm={3} md={2} lg={2}>
+              <Grid item xs={4} sm={2} md={2} lg={2}>
                 <img
                   src={"./public/assets/tech/" + skill.logo}
                   alt={skill.name}
