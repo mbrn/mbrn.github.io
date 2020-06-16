@@ -124,7 +124,8 @@
       "location": "Istanbul",
       "logo": "digiturk.png",
       "jobs": [
-        "Design and Development of React based frontend infrastructure. Technology stack contains React, Redux, Typescript, Material Design."
+        "Design and development of React based frontend infrastructure. Technology stack contains React, Redux, Typescript, Material Design.",
+        "Design and development of microservice architecture that based on .Net Core"
       ]
     },
     {
