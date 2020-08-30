@@ -36,7 +36,12 @@
         "logo": "c_sharp.png"
       },
       {
-        "name": "ASP.NET MVC",
+        "name": ".Net Core",
+        "level": 80,
+        "logo": "net_core.png"
+      },
+      {
+        "name": "ASP.NET",
         "level": 90,
         "logo": "asp-net-mvc.jpg"
       },
@@ -91,9 +96,24 @@
         "logo": "neo4j.png"
       },
       {
-        "name": "Elastic Search",
+        "name": "Elastic",
         "level": 50,
         "logo": "elastic.png"
+      },
+      {
+        "name": "RabbitMQ",
+        "level": 60,
+        "logo": "rabbitmq.png"
+      },
+      {
+        "name": "Git",
+        "level": 80,
+        "logo": "git.png"
+      },
+      {
+        "name": "GitHub",
+        "level": 90,
+        "logo": "github.png"
       },
       {
         "name": "Docker",
@@ -105,7 +125,6 @@
       "Microservices",
       "ORM",
       "Distributed Messaging Systems",
-      "RabbitMQ",
       "Thread&Socket Programming",
       "Frontend Architectures",
       "Opensource",
